@@ -1,15 +1,29 @@
+const loader = document.querySelector(".loader");
 const button = document.getElementById("openBtn");
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        loader.style.display = "none";
+    }, 2500);
+});
 
 button.addEventListener("click", () => {
 
-    document.body.style.transition = "1s";
+    button.innerHTML = "❤️ Welcome ❤️";
 
-    document.body.style.background = "#111";
+    button.style.background = "#fff";
+    button.style.color = "#000";
 
-    button.innerHTML = "Welcome ❤️";
+    document.querySelector(".content").style.transform = "scale(1.05)";
+    document.querySelector(".content").style.transition = ".8s";
 
     setTimeout(() => {
-        alert("Welcome to Anushka ❤️ Sachin's Wedding");
-    },500);
+
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: "smooth"
+        });
+
+    },800);
 
 });
