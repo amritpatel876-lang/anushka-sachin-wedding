@@ -46,3 +46,12 @@ document.getElementById("minutes").innerHTML = minutes;
 document.getElementById("seconds").innerHTML = seconds;
 
 },1000);
+
+// tumhara purana code
+
+
+function openInvitation(){
+
+document.getElementById("envelope").style.display="none";
+
+}
