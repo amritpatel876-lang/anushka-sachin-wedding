@@ -176,3 +176,44 @@ transition:.4s;
 transform:translateY(-8px);
 box-shadow:0 0 25px rgba(212,175,55,.35);
 }
+.venue{
+padding:80px 20px;
+background:#080808;
+text-align:center;
+}
+
+.venue h2{
+color:#d4af37;
+margin-bottom:35px;
+}
+
+.venue-card{
+max-width:500px;
+margin:auto;
+padding:35px;
+background:#111;
+border:1px solid #d4af37;
+border-radius:20px;
+box-shadow:0 0 25px rgba(212,175,55,.2);
+}
+
+.venue-card h3{
+color:#fff;
+margin-bottom:15px;
+}
+
+.venue-card p{
+color:#ccc;
+margin:10px 0;
+}
+
+.venue-card a{
+display:inline-block;
+margin-top:20px;
+padding:14px 28px;
+background:#d4af37;
+color:#000;
+font-weight:bold;
+border-radius:30px;
+text-decoration:none;
+}
