@@ -1155,3 +1155,65 @@ html {
         bottom:15px;
     }
 }
+
+/* 🌿 FINAL IVORY + OLIVE CONSISTENCY */
+
+* {
+    scrollbar-color: #9aa989 #f8f6ee;
+}
+
+body {
+    background: #f8f6ee;
+}
+
+a {
+    color: #68775a;
+}
+
+a:hover {
+    color: #536247;
+}
+
+/* Section separators */
+section::after {
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(120,136,102,.28),
+        transparent
+    );
+}
+
+/* Elegant small accents */
+.venue-line {
+    background: linear-gradient(
+        to right,
+        transparent,
+        #9aa989,
+        transparent
+    );
+}
+
+/* Text selection */
+::selection {
+    background: #9aa989;
+    color: #fff;
+}
+
+/* Remove old yellow/gold glow */
+.hero h1,
+.content h1 {
+    text-shadow: none;
+}
+
+/* Premium soft card effect */
+.card,
+.event-card,
+.family-card,
+.couple-card,
+.venue-card,
+.gallery-item {
+    box-shadow:
+        0 10px 35px rgba(61,72,51,.08),
+        0 2px 8px rgba(61,72,51,.04);
+}
