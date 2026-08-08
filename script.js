@@ -79,3 +79,21 @@ if (music && musicButton) {
     });
 
 }
+
+// 💌 Luxury Envelope Opening
+
+const envelopeScreen = document.getElementById("envelope");
+
+if (envelopeScreen) {
+    envelopeScreen.addEventListener("click", function(e) {
+
+        if (e.target.closest("button")) {
+            envelopeScreen.classList.add("opening");
+
+            setTimeout(function() {
+                envelopeScreen.classList.add("hide-envelope");
+            }, 1200);
+        }
+
+    });
+}
