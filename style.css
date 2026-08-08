@@ -1583,3 +1583,73 @@ section::after {
 .heart-divider {
     color: #788866;
 }
+
+/* 🌿 FINAL BLACK & GOLD OVERRIDE */
+
+body,
+main,
+section {
+    background-color: #f8f6ee !important;
+    color: #394333 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #647455 !important;
+}
+
+p, li, span {
+    color: #697263 !important;
+}
+
+/* Old gold text */
+[style*="gold"],
+[style*="#d4af37"],
+[style*="#f0d477"] {
+    color: #788866 !important;
+}
+
+/* Buttons */
+button,
+button:hover {
+    background: #788866 !important;
+    color: #ffffff !important;
+    border-color: #788866 !important;
+}
+
+/* Borders */
+.card,
+.event-card,
+.family-card,
+.couple-card,
+.gallery-item,
+.time-box,
+.venue-card {
+    border-color: rgba(125,141,109,.35) !important;
+}
+
+/* Old dark backgrounds */
+.envelope-screen,
+.envelope,
+.card,
+.event-card,
+.family-card,
+.couple-card,
+.gallery-item,
+.time-box {
+    background-color: #f8f6ee !important;
+}
+
+/* Floating controls */
+.music-toggle {
+    background: #f8f6ee !important;
+    color: #647455 !important;
+    border-color: #9aa989 !important;
+}
+
+/* Gold/black decorative elements */
+.heart-divider,
+.venue-line,
+.hero .content::before,
+.hero .content::after {
+    color: #8a9979 !important;
+}
