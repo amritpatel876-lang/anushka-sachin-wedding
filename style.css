@@ -1271,3 +1271,43 @@ section::after {
 .hero .content button:hover {
     background: #667557;
 }
+
+/* 🌿 ELEGANT HERO DECORATION */
+
+.hero .content::before,
+.hero .content::after {
+    content: "❦";
+    display: block;
+    color: #8a9979;
+    font-size: 32px;
+    line-height: 1;
+}
+
+.hero .content::before {
+    margin-bottom: 25px;
+}
+
+.hero .content::after {
+    margin-top: 25px;
+    transform: rotate(180deg);
+}
+
+.hero .content h1 {
+    position: relative;
+}
+
+.hero .content h1::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 1px;
+    margin: 22px auto;
+    background: #9aa989;
+}
+
+@media (max-width: 600px) {
+    .hero .content::before,
+    .hero .content::after {
+        font-size: 26px;
+    }
+}
