@@ -1044,3 +1044,114 @@ html {
         transform:scale(1.25) translateY(-30px);
     }
 }
+
+/* 📱 FINAL MOBILE POLISH */
+
+@media (max-width: 600px){
+
+    body{
+        font-size:15px;
+    }
+
+    .content{
+        width:94%;
+        padding:20px 12px;
+    }
+
+    .content h1{
+        font-size:clamp(42px,13vw,58px);
+        line-height:1.1;
+    }
+
+    .content h3{
+        font-size:10px;
+        letter-spacing:3px;
+    }
+
+    .content p{
+        font-size:15px;
+    }
+
+    .countdown,
+    .events,
+    .details,
+    .family,
+    .venue,
+    .invitation-message,
+    .gallery-section,
+    .couple-section,
+    .luxury-venue{
+        padding:75px 16px;
+    }
+
+    .countdown h2,
+    .events h2,
+    .details h2,
+    .family h2,
+    .gallery-section h2,
+    .couple-section h2,
+    .luxury-venue h2{
+        font-size:32px;
+    }
+
+    .timer{
+        gap:8px;
+    }
+
+    .time-box{
+        min-width:70px;
+        padding:16px 8px;
+    }
+
+    .time-box span{
+        font-size:23px;
+    }
+
+    .time-box p{
+        font-size:9px;
+        letter-spacing:1px;
+    }
+
+    .event-grid,
+    .gallery-grid{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .event-card{
+        min-height:150px;
+        padding:20px 12px;
+    }
+
+    .event-card h3{
+        font-size:18px;
+    }
+
+    .event-card p{
+        font-size:13px;
+    }
+
+    .family-grid{
+        grid-template-columns:1fr;
+    }
+
+    .couple-cards{
+        flex-direction:column;
+    }
+
+    .heart-divider{
+        transform:rotate(90deg);
+        margin:5px 0;
+    }
+
+    .couple-card{
+        width:min(320px,100%);
+    }
+
+    .music-toggle{
+        width:52px;
+        height:52px;
+        right:15px;
+        bottom:15px;
+    }
+}
