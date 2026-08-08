@@ -1960,4 +1960,11 @@ button:hover {
         opacity: 1;
         transform: translateY(0) scale(1);
     }
+}/* A&S reveal starts hidden */
+#monogramReveal {
+    display: none;
+}
+
+#monogramReveal.show {
+    display: block;
 }
