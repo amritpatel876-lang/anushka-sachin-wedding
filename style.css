@@ -895,3 +895,64 @@ html {
         0 10px 35px rgba(0,0,0,.5),
         0 0 30px rgba(212,175,55,.25);
 }
+
+/* 📍 LUXURY VENUE */
+
+.luxury-venue{
+    padding:120px 20px;
+    text-align:center;
+    background:
+        radial-gradient(circle at center,rgba(212,175,55,.09),transparent 45%),
+        #080808;
+}
+
+.venue-label{
+    color:#a89570;
+    font-size:11px;
+    letter-spacing:5px;
+    margin-bottom:20px;
+}
+
+.luxury-venue h2{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(32px,6vw,52px);
+    font-weight:400;
+    color:#e2c16b;
+    margin-bottom:18px;
+}
+
+.venue-address{
+    color:#bcb3a5;
+    font-size:16px;
+    line-height:1.8;
+}
+
+.map-button{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 30px;
+    border:1px solid #d4af37;
+    border-radius:50px;
+    color:#e2c16b;
+    background:rgba(212,175,55,.06);
+    text-decoration:none;
+    transition:.35s ease;
+}
+
+.map-button:hover{
+    background:#d4af37;
+    color:#100c06;
+    transform:translateY(-3px);
+}
+
+.venue-line{
+    width:100px;
+    height:1px;
+    margin:35px auto;
+    background:linear-gradient(
+        to right,
+        transparent,
+        #d4af37,
+        transparent
+    );
+}
