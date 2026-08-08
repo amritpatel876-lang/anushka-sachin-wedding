@@ -856,3 +856,42 @@ html {
         gap:12px;
     }
 }
+
+/* 🎵 FLOATING MUSIC BUTTON */
+
+.music-toggle{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:9998;
+
+    width:58px;
+    height:58px;
+    padding:0;
+
+    border:1px solid rgba(224,189,98,.7);
+    border-radius:50%;
+
+    background:rgba(15,12,8,.85);
+    color:#e0bd62;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:22px;
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.45),
+        0 0 20px rgba(212,175,55,.12);
+
+    transition:.35s ease;
+}
+
+.music-toggle:hover{
+    transform:scale(1.08);
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.5),
+        0 0 30px rgba(212,175,55,.25);
+}
