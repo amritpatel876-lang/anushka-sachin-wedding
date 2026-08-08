@@ -956,3 +956,58 @@ html {
         transparent
     );
 }
+
+/* 💌 LUXURY ENVELOPE */
+
+.envelope-screen{
+    transition:opacity 1.2s ease, visibility 1.2s ease;
+}
+
+.envelope-screen.hide-envelope{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+}
+
+.envelope{
+    position:relative;
+    animation:envelopeFloat 3s ease-in-out infinite;
+}
+
+.envelope::before{
+    content:"";
+    position:absolute;
+    inset:-2px;
+    border-radius:27px;
+    border:1px solid rgba(224,189,98,.35);
+    box-shadow:0 0 45px rgba(212,175,55,.12);
+    pointer-events:none;
+}
+
+.envelope .seal{
+    animation:sealGlow 2s ease-in-out infinite;
+}
+
+.envelope h1{
+    letter-spacing:2px;
+}
+
+@keyframes envelopeFloat{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+}
+
+@keyframes sealGlow{
+    0%,100%{
+        transform:scale(1);
+        filter:drop-shadow(0 0 0 rgba(212,175,55,0));
+    }
+    50%{
+        transform:scale(1.08);
+        filter:drop-shadow(0 0 14px rgba(212,175,55,.5));
+    }
+}
