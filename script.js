@@ -47,11 +47,14 @@ document.getElementById("seconds").innerHTML = seconds;
 
 },1000);
 
-// tumhara purana code
-
 
 function openInvitation(){
 
 document.getElementById("envelope").style.display="none";
 
+}
+
+function openInvitation() {
+    const envelope = document.getElementById("envelope");
+    envelope.style.display = "none";
 }
