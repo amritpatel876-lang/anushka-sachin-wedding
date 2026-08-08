@@ -48,11 +48,7 @@ document.getElementById("seconds").innerHTML = seconds;
 },1000);
 
 
-function openInvitation(){
 
-document.getElementById("envelope").style.display="none";
-
-}
 
 function openInvitation() {
     const envelope = document.getElementById("envelope");
