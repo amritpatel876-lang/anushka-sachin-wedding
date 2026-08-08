@@ -58,3 +58,24 @@ function openInvitation() {
     const envelope = document.getElementById("envelope");
     envelope.style.display = "none";
 }
+
+// 🎵 Wedding Music Toggle
+
+const music = document.getElementById("weddingMusic");
+const musicButton = document.getElementById("musicToggle");
+
+if (music && musicButton) {
+
+    musicButton.addEventListener("click", function () {
+
+        if (music.paused) {
+            music.play();
+            musicButton.innerHTML = "🔊 Music On";
+        } else {
+            music.pause();
+            musicButton.innerHTML = "🔇 Music Off";
+        }
+
+    });
+
+}
