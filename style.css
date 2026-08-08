@@ -1502,3 +1502,45 @@ section::after {
     font-size: 30px;
     margin-bottom: 25px;
 }
+
+/* 📍 PREMIUM VENUE */
+
+.luxury-venue {
+    background: #f8f6ee;
+    text-align: center;
+}
+
+.luxury-venue h2 {
+    color: #647455;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.luxury-venue .venue-label {
+    color: #8a967d;
+}
+
+.luxury-venue .venue-address {
+    color: #697263;
+}
+
+.map-button {
+    background: #788866;
+    color: #fffdf7;
+    border: 1px solid #788866;
+    box-shadow: 0 8px 25px rgba(61,72,51,.12);
+}
+
+.map-button:hover {
+    background: #647455;
+    color: #fffdf7;
+}
+
+.luxury-venue .venue-line {
+    background: linear-gradient(
+        to right,
+        transparent,
+        #9aa989,
+        transparent
+    );
+}
