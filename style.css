@@ -1217,3 +1217,57 @@ section::after {
         0 10px 35px rgba(61,72,51,.08),
         0 2px 8px rgba(61,72,51,.04);
 }
+
+/* 🌿🤍 PREMIUM HERO */
+
+.hero {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 50% 20%, rgba(154,169,137,.18), transparent 35%),
+        #f8f6ee;
+}
+
+.hero .overlay {
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(248,246,238,.05),
+            rgba(248,246,238,.45)
+        );
+}
+
+.hero .content {
+    max-width: 850px;
+}
+
+.hero .content h3 {
+    color: #7b896d;
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+
+.hero .content h1 {
+    color: #4f5d45;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.hero .content h1 span {
+    color: #7d8d6d;
+    font-style: italic;
+}
+
+.hero .content p {
+    color: #697360;
+}
+
+.hero .content button {
+    background: #7d8d6d;
+    color: #fffdf7;
+    border: none;
+}
+
+.hero .content button:hover {
+    background: #667557;
+}
