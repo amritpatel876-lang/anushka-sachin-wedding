@@ -1891,4 +1891,73 @@ button:hover {
     .journey-info p {
         font-size: 11px;
     }
+}/* ===== PREMIUM RING MONOGRAM ===== */
+
+.monogram-reveal {
+    text-align: center;
+    padding: 70px 20px;
+    opacity: 0;
+    transform: translateY(25px) scale(0.95);
+    animation: monogramReveal 1.5s ease forwards;
+}
+
+.ring {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 28px;
+    border: 5px solid #9aaa83;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        0 0 18px rgba(154,170,131,0.35),
+        inset 0 0 12px rgba(154,170,131,0.15);
+    position: relative;
+}
+
+.ring::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border: 2px solid #d8dfcc;
+    border-radius: 50%;
+    top: -13px;
+    left: 36px;
+}
+
+.ring-stone {
+    font-family: "Bodoni Moda", serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #68775b;
+    letter-spacing: 1px;
+}
+
+.monogram-text {
+    font-family: "Cinzel", serif;
+    color: #68775b;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.monogram-text b {
+    display: inline-block;
+    margin: 0 10px;
+    font-family: "Bodoni Moda", serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+@keyframes monogramReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
