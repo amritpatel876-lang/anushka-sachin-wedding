@@ -319,3 +319,64 @@ font-weight:bold;
 .envelope button:hover{
 transform:scale(1.05);
 }
+
+.family{
+    padding:100px 20px;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(212,175,55,.08), transparent 30%),
+        #080808;
+    text-align:center;
+}
+
+.family h2{
+    font-family:Cinzel,serif;
+    font-size:42px;
+    color:#d8bd72;
+    margin-bottom:50px;
+}
+
+.family-grid{
+    max-width:900px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.family-card{
+    padding:40px 25px;
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(216,189,114,.35);
+    border-radius:24px;
+    backdrop-filter:blur(15px);
+}
+
+.family-card h3{
+    font-family:Cinzel,serif;
+    color:#d8bd72;
+    font-size:25px;
+    margin-bottom:25px;
+}
+
+.family-card p{
+    color:#ddd;
+    line-height:1.8;
+    margin:15px 0;
+}
+
+.family-card strong{
+    color:#a99b7a;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+@media(max-width:650px){
+    .family-grid{
+        grid-template-columns:1fr;
+    }
+
+    .family h2{
+        font-size:32px;
+    }
+}
