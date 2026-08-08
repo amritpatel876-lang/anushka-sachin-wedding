@@ -1470,3 +1470,35 @@ section::after {
 .time-box p {
     color: #89917f;
 }
+
+/* 💌 ELEGANT INVITATION MESSAGE */
+
+.invitation-message {
+    background: #f8f6ee;
+    text-align: center;
+    padding: 110px 25px;
+}
+
+.invitation-message h2 {
+    color: #647455;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.invitation-message p {
+    max-width: 720px;
+    margin: auto;
+    color: #697263;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    line-height: 2;
+    font-style: italic;
+}
+
+.invitation-message::before {
+    content: "❦";
+    display: block;
+    color: #8a9979;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
