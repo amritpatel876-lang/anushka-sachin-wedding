@@ -1653,3 +1653,242 @@ button:hover {
 .hero .content::after {
     color: #8a9979 !important;
 }
+
+/* =========================================
+   PREMIUM WEDDING JOURNEY
+   ========================================= */
+
+.events {
+    padding: 90px 20px;
+    background: #f7f5ed;
+    color: #59634c;
+    text-align: center;
+}
+
+.events h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    font-size: clamp(28px, 7vw, 48px);
+    letter-spacing: 3px;
+    color: #59634c;
+    margin-bottom: 55px;
+}
+
+.wedding-timeline {
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Vertical luxury line */
+.wedding-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #9aa487,
+        #9aa487,
+        transparent
+    );
+    transform: translateX(-50%);
+}
+
+/* Date divider */
+.timeline-date {
+    position: relative;
+    z-index: 2;
+    margin: 35px auto 28px;
+}
+
+.timeline-date span {
+    display: inline-block;
+    padding: 10px 24px;
+    background: #f7f5ed;
+    border: 1px solid #a3aa91;
+    border-radius: 30px;
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #59634c;
+}
+
+/* Event card */
+.journey-card {
+    position: relative;
+    z-index: 2;
+    margin: 18px auto;
+    max-width: 570px;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid #c8cdbd;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(70, 78, 58, 0.08);
+    text-align: left;
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
+
+.journey-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 35px rgba(70, 78, 58, 0.14);
+}
+
+/* Clickable row */
+.journey-card summary {
+    list-style: none;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 55px 1fr 30px;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 22px;
+}
+
+.journey-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.journey-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef0e7;
+    border-radius: 50%;
+    font-size: 23px;
+}
+
+.journey-card strong {
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #4f5944;
+}
+
+.journey-card small {
+    display: block;
+    margin-top: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #7d8572;
+}
+
+.plus {
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #7f8b70;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Open animation */
+.journey-card[open] {
+    border-color: #9ba58a;
+}
+
+.journey-card[open] .plus {
+    transform: rotate(45deg);
+}
+
+.journey-info {
+    padding: 0 25px 22px 89px;
+    border-top: 1px solid #e0e3d8;
+    animation: journeyReveal 0.35s ease;
+}
+
+.journey-info p {
+    margin: 14px 0 0;
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #737b68;
+}
+
+.wedding-main {
+    border-color: #9aa487;
+    box-shadow: 0 12px 35px rgba(80, 91, 65, 0.13);
+}
+
+@keyframes journeyReveal {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .events {
+        padding: 70px 15px;
+    }
+
+    .events h2 {
+        font-size: 29px;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+    }
+
+    .wedding-timeline::before {
+        left: 28px;
+    }
+
+    .timeline-date {
+        text-align: left;
+        margin-left: 7px;
+    }
+
+    .timeline-date span {
+        font-size: 11px;
+        padding: 9px 17px;
+        letter-spacing: 1.5px;
+    }
+
+    .journey-card {
+        margin-left: 8px;
+        margin-right: 0;
+        border-radius: 16px;
+    }
+
+    .journey-card summary {
+        grid-template-columns: 48px 1fr 25px;
+        padding: 16px;
+        gap: 10px;
+    }
+
+    .journey-icon {
+        width: 43px;
+        height: 43px;
+        font-size: 20px;
+    }
+
+    .journey-card strong {
+        font-size: 14px;
+    }
+
+    .journey-card small {
+        font-size: 10px;
+    }
+
+    .journey-info {
+        padding: 0 18px 18px 74px;
+    }
+
+    .journey-info p {
+        font-size: 11px;
+    }
+}
