@@ -52,7 +52,21 @@ document.getElementById("seconds").innerHTML = seconds;
 
 function openInvitation() {
     const envelope = document.getElementById("envelope");
-    envelope.style.display = "none";
+    const monogram = document.getElementById("monogramReveal");
+
+    if (envelope) {
+        envelope.classList.add("opening");
+
+        setTimeout(function() {
+            envelope.classList.add("hide-envelope");
+        }, 1200);
+    }
+
+    if (monogram) {
+        setTimeout(function() {
+            monogram.classList.add("show");
+        }, 1400);
+    }
 }
 
 // 🎵 Wedding Music Toggle
