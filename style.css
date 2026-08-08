@@ -1435,3 +1435,38 @@ section::after {
 .family-card strong {
     color: #8a967d;
 }
+
+/* ⏳ PREMIUM COUNTDOWN */
+
+.countdown {
+    background: #f8f6ee;
+    text-align: center;
+}
+
+.countdown h2 {
+    color: #647455;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.timer {
+    max-width: 700px;
+    margin: auto;
+}
+
+.time-box {
+    background: rgba(255,255,255,.82);
+    border: 1px solid rgba(125,141,109,.35);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(61,72,51,.07);
+}
+
+.time-box span {
+    color: #718260;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.time-box p {
+    color: #89917f;
+}
