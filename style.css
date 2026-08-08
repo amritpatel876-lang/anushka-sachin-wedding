@@ -1311,3 +1311,43 @@ section::after {
         font-size: 26px;
     }
 }
+
+/* 🖼️ HERO PHOTO FRAME READY */
+
+.hero-photo {
+    width: min(90%, 720px);
+    height: min(70vh, 620px);
+    margin: 0 auto 30px;
+    border-radius: 28px;
+    overflow: hidden;
+    border: 1px solid rgba(125,141,109,.45);
+    box-shadow: 0 20px 60px rgba(61,72,51,.14);
+    position: relative;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent 55%,
+        rgba(248,246,238,.35)
+    );
+    pointer-events: none;
+}
+
+@media (max-width:600px) {
+    .hero-photo {
+        width: 92%;
+        height: 52vh;
+        border-radius: 20px;
+    }
+}
